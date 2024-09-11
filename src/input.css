@@ -2,3 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.blobs{
+  background-image: url(./img/bg-blobs.png);
+  background-repeat: no-repeat;
+  background-color: #00043E;
+  background-position: top right;
+  background-attachment: fixed;
+}
+
+.rotateY180{
+  transform: rotateY(180deg);
+}
+

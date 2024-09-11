@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
         'cyan-helmo': '#73C5C3',
@@ -9,7 +12,7 @@ module.exports = {
         'purple-helmo': '#C26AA6',
         'red-helmo': '#D92049',
         'orange-helmo': '#EF7F1A',
-        'bg': '#00043E',
+        'dark-blue': '#00043E',
       },
       fontFamily:{
         'jet' : ['JetBrains Mono']
