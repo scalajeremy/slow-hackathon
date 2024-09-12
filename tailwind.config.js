@@ -13,6 +13,7 @@ module.exports = {
         'red-helmo': '#D92049',
         'orange-helmo': '#EF7F1A',
         'dark-blue': '#00043E',
+        'light-blue': ''
       },
       fontFamily:{
         'jet' : ['JetBrains Mono']

@@ -10,54 +10,58 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </head>
-<body class="bg-dark-blue text-white font-jet blobs text-lg">
-  <header class="flex container my-10 justify-between">
+
+<body class="bg-dark-blue text-white font-jet text-lg">
+  <video playsinline autoplay muted loop id="bgvid">
+    <source src="./vid/blobs.webm" type="video/webm">
+  </video>
+  <header class="flex flex-col md:flex-row container my-10 justify-between">
     <h1 class="text-white text-4xl font-jet">Slow Hackathon</h1>
-    <nav>
-      <ul class="flex h-full items-center gap-10">
+    <nav class="">
+      <ul class="flex flex-col flex-wrap h-full items-center gap-10 md:flex-row">
         <a href="#description"><li>Description</li></a>
         <a href="#programme"><li>Programme</li></a>
-        <li class="bg-red-helmo rounded-md py-2 px-4">Inscription</li>
+        <a href="https://www.helmo.be/fr/slow-hackathon" target="_blank"><li class="bg-red-helmo rounded-md py-2 px-4">Inscription</li></a>
       </ul>
     </nav>
   </header>
-  <main class="container">
+  <main>
     <!-- intro -->
-    <section class="container my-24 lg:px-40 xl:px-40 2xl:px-40">
-      <div class="flex flex-col gap-10 items-center backdrop-blur-lg rounded-3xl p-24 bg-gradient-to-b from-gray-400/10 to-dark-blue/30">
-        <span class="text-5xl text-green-helmo font-bold uppercase">10 et 11 Octobre 2024</span>
+    <section class="container px-8 my-20">
+      <div class="flex flex-col gap-10 items-center justify-centerbackdrop-blur-lg rounded-3xl glassmorphism p-4 py-6">
+        <span class="text-green-helmo font-bold uppercase">10 et 11 Octobre 2024</span>
         <div class="text-center">
-          <span class="text-5xl uppercase">Un slow</span><br/>
-          <span class="text-7xl font-bold uppercase">hackathon</span><br/>
-          <span class="text-4xl">en travail social</span>
+          <span class="uppercase">Un slow</span><br/>
+          <span class="font-bold uppercase">hackathon</span><br/>
+          <span class="">en travail social</span>
         </div>
-        <p class="px-5">Du vécu à l'utopie: partages, réflexions collectives et expériences de co-création numérique.</p>
-        <span class="bg-red-helmo rounded-md py-2 px-4 grow-0 w-fit">Je veux participer</span>
+        <p class="">Du vécu à l'utopie: partages, réflexions collectives et expériences de co-création numérique.</p>
+        <a href="https://www.helmo.be/fr/slow-hackathon" target="_blank"><span class="bg-red-helmo rounded-3xl py-2 px-4 w-full">Je veux participer</span></a>
       </div>
     </section>
-    <!-- date -->
-    <section class="container my-16 px-40 text-center">
-    </section>
     <!-- description -->
-    <section class="container my-16 px-40 flex" id="description">
-      <div class="backdrop-blur-lg rounded-3xl p-24 bg-gradient-to-b from-gray-400/10 to-dark-blue/30">
+    <section class="container px-8 my-20" id="description">
+      <div class="flex flex-col gap-10 items-center justify-centerbackdrop-blur-lg rounded-3xl glassmorphism p-4 py-6">
         <h2 class="uppercase text-3xl mb-5" >Description</h2>
         <div class="flex">
           <p>Le Slow Hackathon du Hackesas est conçu comme un espace de partage et de réflexion collective autour de nos expériences du numérique dans le travail social. En mettant en commun les difficultés que nous rencontrons, nous chercherons à comprendre les enjeux communs pour imaginer ensemble ce que pourrait être un numérique idéal, plus humain et mieux adapté à nos besoins. Ce sera également un moment d’échange permanent avec les codeurs présents, une acculturation mutuelle qui permettra de donner une dimension concrète et tangible à nos utopies. </p>
-          <dotlottie-player class="shrink-0 hidden xl:block 2xl:block" src="https://lottie.host/a7e2509c-7c85-42c5-8264-fe7159918565/edSdXkYuCX.json" background="transparent" speed="1" style="width: 400px; height: 500px;" loop autoplay></dotlottie-player>
-
         </div>
       </div>
+      <video playsinline autoplay muted loop id="perso1">
+        <source src="./vid/perso.webm" type="video/webm">
+      </video>
     </section>
-    <section class="container my-16 px-80 flex">
+    <section class="container my-24 lg:px-40 xl:px-40 2xl:px-40 flex">
       <p class="text-2xl">"Ce projet est né de la collaboration entre le projet Hackesas et le Monde des Possibles."</p>
     </section>
     <!-- programme -->
-    <section class="container my-16 px-40 flex" id="programme">
-      <div class="backdrop-blur-lg rounded-3xl p-24 bg-gradient-to-b from-gray-400/10 to-dark-blue/30">
+    <!-- <section class="container my-24 lg:px-40 xl:px-40 2xl:px-40 flex" id="programme">
+      <video playsinline autoplay muted loop id="perso1" class="rotateY180 hidden lg:block xl:block 2xl:block">
+        <source src="./vid/perso.webm" type="video/webm">
+      </video>
+      <div class="backdrop-blur-lg rounded-3xl p-24 bg-gradient-to-b from-gray-400/10 to-dark-blue/30 w-3/4">
         <h2 class="uppercase text-3xl mb-5" id="description">Programme</h2>
         <div class="flex">
-          <dotlottie-player class="shrink-0 rotateY180 hidden xl:block 2xl:block" src="https://lottie.host/a7e2509c-7c85-42c5-8264-fe7159918565/edSdXkYuCX.json" background="transparent" speed="1" style="width: 400px; height: 500px;" loop autoplay></dotlottie-player>
           <div>
             <p class="text-2xl mb-4">10 octobre</p>
             <ul class="list-disc">
@@ -79,23 +83,23 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- inscription-->
-    <section class="container my-16 px-40 flex" id="inscription">
-      <div class="backdrop-blur-lg rounded-3xl p-24 bg-gradient-to-b from-gray-400/10 to-dark-blue/30">
-        <h2 class="uppercase text-3xl mb-5" >Inscription</h2>
-        <div class="flex">
+    <!-- <section class="container my-24 lg:px-40 xl:px-40 2xl:px-40" id="inscription">
+      <a href="https://www.helmo.be/fr/slow-hackathon" target="_blank">
+        <div class="backdrop-blur-lg bg-red-helmo hover:bg-red-700 rounded-3xl p-24 bg-gradient-to-b from-gray-400/10 to-dark-blue/30 w-full flex justify-center items-center">
+          <h2 class="uppercase text-5xl mb-5" >Inscription</h2>
         </div>
-      </div>
-    </section>
+      </a>
+    </section> -->
   </main>
-  <footer class="w-full px-40 bg-white">
+  <!-- <footer class="w-full px-40 bg-white">
     <div class="h-36 flex shrink-1 grow-0 justify-around">
       <img class="" src="./img/hackesas.png" alt="">
       <img class="" src="./img/helmo.png" alt="">
       <img class="" src="./img/ue.jpg" alt="">
-      <img class="" src="./img/mdp.png" alt="">
+      <img class="" src="./img/mdp_small.png" alt="">
     </div>
-  </footer>
+  </footer> -->
 </body>
 </html>
