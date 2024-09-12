@@ -2,6 +2,15 @@
 ! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
 */
 
+#description {
+  scroll-margin-top: 150px;
+}
+
+#programme {
+  scroll-margin-top: 150px;
+}
+
+
 footer{
   height: 30vh;
   display: flex;
@@ -25,7 +34,8 @@ footer{
 
 
 section:first-of-type {
-  height: 100vh;
+  
+  height: 20vh;
 }
 
 /*
