@@ -17,8 +17,11 @@ module.exports = {
       },
       fontFamily:{
         'jet' : ['JetBrains Mono']
-      }
-    },
+      },
+      letterSpacing: {
+        widest: '0.2em',
+    }
   },
   plugins: [],
+}
 }
