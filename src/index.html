@@ -8,17 +8,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </head>
 
 <body class="bg-dark-blue text-white font-jet text-lg">
   <video playsinline autoplay muted loop id="bgvid">
     <source src="./vid/blobs.webm" type="video/webm">
   </video>
-  <header class="flex flex-col md:flex-row container my-10 justify-between">
-    <h1 class="text-white text-4xl font-jet">Slow Hackathon</h1>
+  <header class="flex flex-col lg:flex-row container px-8 my-10 justify-between">
+    <h1 class="text-white text-4xl font-jet text-center">Slow Hackathon</h1>
     <nav class="">
-      <ul class="flex flex-col flex-wrap h-full items-center gap-10 md:flex-row">
+      <ul class="flex flex-col flex-wrap h-full items-center gap-5 mt-5 lg:flex-row lg:mt-0">
         <a href="#description"><li>Description</li></a>
         <a href="#programme"><li>Programme</li></a>
         <a href="https://www.helmo.be/fr/slow-hackathon" target="_blank"><li class="bg-red-helmo rounded-md py-2 px-4">Inscription</li></a>
@@ -26,24 +25,26 @@
     </nav>
   </header>
   <main>
+
     <!-- intro -->
-    <section class="container px-8 my-20">
+    <section class="container px-8 my-20 md:my-40">
       <div class="flex flex-col gap-10 items-center justify-centerbackdrop-blur-lg rounded-3xl glassmorphism p-4 py-16">
         <span class="text-green-helmo font-bold uppercase text-4xl text-center">10 et 11 Octobre 2024</span>
         <div class="text-center">
-          <span class="uppercase text-3xl">Un slow</span><br/>
-          <span class="font-bold uppercase text-3xl">hackathon</span><br/>
-          <span class="">en travail social</span>
+          <span class="uppercase text-3xl tracking-widest md:text-6xl">Un slow</span><br/>
+          <span class="font-bold uppercase text-3xl tracking-widest md:text-7xl">hackathon</span><br/>
+          <span class="tracking-widest md:text-4xl">en travail social</span>
         </div>
         <p class="">Du vécu à l'utopie: partages, réflexions collectives et expériences de co-création numérique.</p>
-        <a href="https://www.helmo.be/fr/slow-hackathon" target="_blank"><span class="bg-red-helmo rounded-xl py-2 px-4 w-full text-base">Je veux participer</span></a>
+        <a href="https://www.helmo.be/fr/slow-hackathon" target="_blank"><span class="bg-red-helmo rounded-md py-2 px-4 w-full text-base md:text-4xl">Je veux participer</span></a>
       </div>
     </section>
+
     <!-- description -->
-    <section class="container px-8 my-20 flex" id="description">
+    <section class="container px-8 my-20 md:my-40 flex" id="description">
       <div class="flex flex-col gap-10 items-center justify-centerbackdrop-blur-lg rounded-3xl glassmorphism p-4 py-16">
-        <h2 class="uppercase text-3xl mb-5" >Description</h2>
-        <div class="flex">
+        <h2 class="uppercase text-2xl md:text-5xl mb-5 tracking-widest" >Description</h2>
+        <div class="flex sm:px-8">
           <p>Le Slow Hackathon du Hackesas est conçu comme un espace de partage et de réflexion collective autour de nos expériences du numérique dans le travail social. En mettant en commun les difficultés que nous rencontrons, nous chercherons à comprendre les enjeux communs pour imaginer ensemble ce que pourrait être un numérique idéal, plus humain et mieux adapté à nos besoins. Ce sera également un moment d’échange permanent avec les codeurs présents, une acculturation mutuelle qui permettra de donner une dimension concrète et tangible à nos utopies. </p>
         </div>
       </div>
@@ -51,17 +52,20 @@
         <source src="./vid/perso.webm" type="video/webm">
       </video>
     </section>
-    <section class="container px-8 my-20">
-      <p class="text-2xl">"Ce projet est né de la collaboration entre le projet Hackesas et le Monde des Possibles."</p>
+    
+    <!-- quote -->
+    <section class="container px-8 my-20 md:my-40 md:w-1/2">
+      <p class="text-2xl md:text-3xl">"Ce projet est né de la collaboration entre le projet Hackesas et le Monde des Possibles."</p>
     </section>
+
     <!-- programme -->
-    <section class="container px-8 my-20 flex" id="programme">
+    <section class="container px-8 my-20 md:my-40 flex" id="programme">
       <video playsinline autoplay muted loop id="perso1" class="hidden lg:block xl:block 2xl:block">
         <source src="./vid/perso2.webm" type="video/webm">
       </video>
       <div class="flex flex-col gap-10 items-center justify-centerbackdrop-blur-lg rounded-3xl glassmorphism p-4 py-16">
-        <h2 class="uppercase text-3xl mb-5 tracking-widest text-green-helmo" id="description">Programme</h2>
-        <div class="flex">
+        <h2 class="uppercase text-2xl md:text-5xl mb-5 tracking-widest text-green-helmo" id="description">Programme</h2>
+        <div class="flex sm:px-8">
           <div>
             <p class="text-2xl mb-4 text-orange-helmo uppercase bold">10 octobre</p>
             <ul class="list-disc pl-5">
@@ -84,21 +88,23 @@
         </div>
       </div>
     </section>
+
     <!-- inscription-->
-    <section class="container px-8 my-20" id="inscription">
+    <section class="container px-8 my-20 md:my-40" id="inscription">
       <a href="https://www.helmo.be/fr/slow-hackathon" target="_blank">
-        <div class="bg-red-helmo hover:bg-red-700 rounded-xl bg-gradient-to-b from-gray-400/10 to-dark-blue/30 w-full flex justify-center py-5">
+        <div class="bg-red-helmo hover:bg-red-700 rounded-md bg-gradient-to-b from-gray-400/10 to-dark-blue/30 w-full flex justify-center py-5">
           <h2 class="uppercase text-3xl" >Inscription</h2>
         </div>
       </a>
     </section>
   </main>
-  <footer class="w-full bg-white">
-    <div class="h-36 flex shrink-1 grow-0 justify-around">
-      <img class="" src="./img/hackesas.png" alt="">
-      <img class="" src="./img/helmo.png" alt="">
-      <img class="" src="./img/ue.jpg" alt="">
-      <img class="" src="./img/mdp_small.png" alt="">
+
+  <footer class="w-full h-full bg-white">
+    <div class="flex justify-center flex-wrap gap-5">
+      <img class="h-32" src="./img/hackesas.png" alt="">
+      <img class="h-32" src="./img/helmo.png" alt="">
+      <img class="h-32" src="./img/ue.jpg" alt="">
+      <img class="h-32" src="./img/mdp_small.png" alt="">
     </div>
   </footer>
 </body>
