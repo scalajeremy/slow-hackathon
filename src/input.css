@@ -9,7 +9,7 @@ body{
   /* background-position: top right; */
   background-size: cover;
   position: relative;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 .rotateY180{
